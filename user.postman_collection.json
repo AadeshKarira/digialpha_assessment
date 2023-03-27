@@ -1,0 +1,551 @@
+{
+	"info": {
+		"_postman_id": "17778554-d0f1-41c6-9d23-739f09c926ca",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15205988"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Aniket\",\r\n    \"last_name\":\"Randive\",\r\n    \"email\":\"aniketrandive@gmail.com\",\r\n    \"phone\":\"+919021870058\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Aadesh\",\r\n    \"last_name\":\"Karira\",\r\n    \"email\":\"aadeshkarira01@gmail.com\",\r\n    \"phone\":\"9021870090\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "261"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"105-IZ3G1YI8GOS4W5eixCpJlr/Jt1s\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 18:04:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"statusCode\": 200,\n    \"message\": \"User added successfully\",\n    \"data\": {\n        \"id\": 5,\n        \"first_name\": \"Aadesh\",\n        \"last_name\": \"Karira\",\n        \"email\": \"aadeshkarira01@gmail.com\",\n        \"phone\": \"9021870090\",\n        \"updatedAt\": \"2023-03-27T18:04:00.769Z\",\n        \"createdAt\": \"2023-03-27T18:04:00.769Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Aniket\",\r\n    \"last_name\":\"Randive\",\r\n    \"email\":\"aniketrandive@gmail.com\",\r\n    \"phone\":\"+919021870058\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Aniket\",\r\n    \"last_name\":\"Randive\",\r\n    \"email\":\"aniketrandive012@gmail.com\",\r\n    \"phone\":\"9021870058\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users?id=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-vpq9twQfm71EXohHx2pW3n+OwZQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 18:00:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"statusCode\": 200,\n    \"message\": \"User updated successfully\",\n    \"data\": [\n        1\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4f-TeGoRFnjqEE5JoOBcX8/r7IzUOA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 14:59:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"statusCode\": 200,\n    \"message\": \"User deleted successfully\",\n    \"data\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users?phone=9021870090",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "9021870090"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users?first_name=Aniket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "Aniket"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10c-/LE1bitpZqJ38fa7Vl5JSwTtL3I\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 15:04:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"statusCode\": 200,\n    \"message\": \"User fetched successfully\",\n    \"data\": [\n        {\n            \"id\": 4,\n            \"first_name\": \"Aniket\",\n            \"last_name\": \"Randive\",\n            \"email\": \"aniketrandive@gmail.com\",\n            \"phone\": \"+919021870058\",\n            \"createdAt\": \"2023-03-27T15:02:54.000Z\",\n            \"updatedAt\": \"2023-03-27T15:02:54.000Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users?last_name=Karira",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "last_name",
+									"value": "Karira"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10c-Zi0zgPhseZXPtu9K7g6X575S1FU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 17:55:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"statusCode\": 200,\n    \"message\": \"User fetched successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"first_name\": \"Aadesh\",\n            \"last_name\": \"Karira\",\n            \"email\": \"aadeshkarira01@gmail.com\",\n            \"phone\": \"+919021870090\",\n            \"createdAt\": \"2023-03-27T13:30:49.000Z\",\n            \"updatedAt\": \"2023-03-27T13:30:49.000Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users?phone=9021870090",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "phone",
+									"value": "9021870090"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-IEISjaRyCbfXX4TK+mhzPxa6tEM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 18:06:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"statusCode\": 200,\n    \"message\": \"User fetched successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"first_name\": \"Aadesh\",\n            \"last_name\": \"Karira\",\n            \"email\": \"aadeshkarira01@gmail.com\",\n            \"phone\": \"9021870090\",\n            \"createdAt\": \"2023-03-27T13:30:49.000Z\",\n            \"updatedAt\": \"2023-03-27T18:06:12.000Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users?email=aadeshkarira01@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "aadeshkarira01@gmail.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-IEISjaRyCbfXX4TK+mhzPxa6tEM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 18:07:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"statusCode\": 200,\n    \"message\": \"User fetched successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"first_name\": \"Aadesh\",\n            \"last_name\": \"Karira\",\n            \"email\": \"aadeshkarira01@gmail.com\",\n            \"phone\": \"9021870090\",\n            \"createdAt\": \"2023-03-27T13:30:49.000Z\",\n            \"updatedAt\": \"2023-03-27T18:06:12.000Z\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
