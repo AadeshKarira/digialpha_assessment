@@ -92,5 +92,18 @@ router.get('/', async(req, res) => {
     }
 });
 
+router.get('/hello', async(req, res) => {
+    try
+    {
+        res.status(400).send({status: false, statusCode: 400, message: "User not fetched successfully"});
+    }
+    catch(err)
+    {
+        logger.logEvents("Error", err.stack);
+        res.status(400).send({status: false, statusCode: 400, message: err.message}); 
+    }
+});
+
+
 
 module.exports = router;
